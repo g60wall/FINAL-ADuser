@@ -14,28 +14,14 @@ $lastname = Read-Host "Type User Last Name"   ### last name is equal to surename
 $password2 = Read-host "Enter Domain Standard Password"
 
 $SAMname = ($firstname.Substring(0,1)+$lastname)
-<<<<<<< HEAD
 $email = ($samname+"@"+$env:userdomain+".com")
 $password1 = ConvertTo-SecureString "$password3" -AsPlainText -Force 
-=======
-$email = ($samname+"$domain1")
-$password1 = ConvertTo-SecureString "$Password2" -AsPlainText -Force 
->>>>>>> origin/master
 $name =  ($firstname+" "+$lastname) 
 $a = 1
-$password3 = Read-Host "Enter domain Default Password"
-$domain = Read-host "Enter Your Domain"
-
-
- 
-
 
 if(dsquery user -samid $Samname){
-
-   
-
-    do
-
+     do
+            
        { 
    
        
