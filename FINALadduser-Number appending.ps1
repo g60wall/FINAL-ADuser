@@ -12,10 +12,10 @@
 $firstname = Read-Host "Type User First Name" ### First Name in AD 
 $lastname = Read-Host "Type User Last Name"   ### last name is equal to surename in Active Directory
 $password2 = Read-host "Enter Domain Standard Password"
-$domain1 = Read-host "Enter Domain name"
+
 $SAMname = ($firstname.Substring(0,1)+$lastname)
 <<<<<<< HEAD
-$email = ($samname+"$domain")
+$email = ($samname+"@"+$env:userdomain+".com")
 $password1 = ConvertTo-SecureString "$password3" -AsPlainText -Force 
 =======
 $email = ($samname+"$domain1")
