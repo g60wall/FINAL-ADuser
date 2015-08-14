@@ -27,7 +27,7 @@ if(dsquery user -samid $Samname){
        
           $lname= $lastname+$a        
           $SAMname = ($firstname.Substring(0,1)+$lname) 
-          $Email = ($firstname.Substring(0,1)+$lname+"@braenstone.com")
+          $Email = ($firstname.Substring(0,1)+$lname+"PUT YOUR DOMAIN HERE")
           $a++
 
        }
